@@ -1,0 +1,30 @@
+{
+  "name": "schoolmind-portal-gateway",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "git@gitee.com:etonedu/schoolmind-portal-gateway.git",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && pm2 start ./dist/app.js",
+    "start": " ts-node-dev --respawn ./src/app.ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/koa": "^2.13.3",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.4.2",
+    "@types/node": "^15.6.1",
+    "cross-env": "^7.0.3",
+    "glob": "^7.1.7",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "reflect-metadata": "^0.1.13"
+  }
+}
