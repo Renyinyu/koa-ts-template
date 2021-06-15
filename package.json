@@ -1,8 +1,8 @@
 {
-  "name": "schoolmind-portal-gateway",
+  "name": "koa-ts-template",
   "private": true,
   "version": "1.0.0",
-  "repository": "git@gitee.com:etonedu/schoolmind-portal-gateway.git",
+  "repository": "git@github.com:Renyinyu/koa-ts-template.git",
   "scripts": {
     "build": "rm -rf ./dist && tsc && pm2 start ./dist/app.js",
     "start": " ts-node-dev --respawn ./src/app.ts"
